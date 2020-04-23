@@ -12,7 +12,7 @@ import simpy      # biblioteca de simulação
 def geraChegadas(env, nome, taxa, numeroMaxChegadas):
     # função que cria chegadas de entidades no sistema
     contaChegada = 0
-    while (contaChegada < numeroMaxChegadas:
+    while contaChegada < numeroMaxChegadas:
         yield env.timeout(random.expovariate(1/taxa))
         contaChegada += 1
         print("%s %i chega em: %.1f " % (nome, contaChegada, env.now))
@@ -52,7 +52,7 @@ import simpy      # biblioteca de simulação
 def geraChegadas(env, nome, numeroMaxChegadas):
     # função que cria chegadas de entidades no sistema
     contaChegada = 0
-    while (contaChegada < numeroMaxChegadas:
+    while contaChegada < numeroMaxChegadas:
         yield env.timeout(random.triangular(0.1,1,1.1))
         contaChegada += 1
         print("%s %i chega em: %.1f " % (nome, contaChegada, env.now)))
