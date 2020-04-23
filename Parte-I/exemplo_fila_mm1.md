@@ -87,7 +87,7 @@ env.process(geraChegadas(env))                  # incia processo de geração de
 env.run(until=5)                                # executa o modelo por 5 min
 ```
 
-Neste momento, nosso script possui uma função geradora de clientes e uma função de atendimento dos clientes, mas o bom observador deve notar que não existe conexão entre elas. Em SimPy, _e vamos  repetir isso a exaustão_, **tudo é processado dentro de um **`environment`. Assim, o atendimento é um _processo_ que deve ser iniciado por cada cliente _gerado_ pela função `criaChegadas.` Isto é feito por uma chamada a função`env.process(atendimentoServidor(...)).`
+Neste momento, nosso script possui uma função geradora de clientes e uma função de atendimento dos clientes, mas o bom observador deve notar que não existe conexão entre elas. Em SimPy, _e vamos  repetir isso a exaustão_, **tudo é processado dentro de um** `environment`. Assim, o atendimento é um _processo_ que deve ser iniciado por cada cliente _gerado_ pela função `criaChegadas.` Isto é feito por uma chamada a função`env.process(atendimentoServidor(...)).`
 
 A função `geraChegadas`deve ser alterada, portanto, para receber como parâmetro o recurso `servidorRes,`  criado no corpo do programa e para iniciar o processo de atendimento por meio da chamada à função `env.process`, como representado a seguir:
 
