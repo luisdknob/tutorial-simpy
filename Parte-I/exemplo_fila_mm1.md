@@ -1,6 +1,6 @@
 # Juntando tudo em um exemplo: a fila M/M/1
 
-A fila M/M/1 \(ver [Chwif e Medina, 2015](http://livrosimulacao.eng.br/e-tetra-e-tetra-a-quarta-edicao-do-msed/%29\) representa um sistema simples em que clientes chegam para atendimento em um servidor de fila única, com intervalos entre chegadas sucessivas exponencialmente distribuídos e tempos de atendimentos também exponencialmente distribuídos.
+A fila M/M/1 \(ver [Chwif e Medina, 2015](http://livrosimulacao.eng.br/e-tetra-e-tetra-a-quarta-edicao-do-msed/)\) representa um sistema simples em que clientes chegam para atendimento em um servidor de fila única, com intervalos entre chegadas sucessivas exponencialmente distribuídos e tempos de atendimentos também exponencialmente distribuídos.
 
 Para este exemplo, vamos considerar que o tempo médio entre chegadas sucessivas é de 1 min \(ou seja, uma taxa de chegadas de 1 cliente/min\) e o tempo médio de atendimento no servidor é de 0,5 min \(ou seja, uma taxa de atendimento de 2 clientes/min\). Como um experimento inicial, o modelo deve ser simulado por 5 minutos apenas.
 
