@@ -124,7 +124,7 @@ while True:
     yield env.timeout(random.expovariate(0.5))
 ```
 
-**Resposta: **note que, no primeiro caso, a cada novo número gerado é realizada uma operação de divisão. No segundo caso, isso não ocorre, deixando o tempo de processamento bem mais rápido.
+**Resposta:** note que, no primeiro caso, a cada novo número gerado é realizada uma operação de divisão. No segundo caso, isso não ocorre, deixando o tempo de processamento bem mais rápido.
 
 ## Teste seus conhecimentos:
 
